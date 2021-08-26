@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing:border-box;
+    line-height: 1.66667;
+    background-color: #fff;
+    font-family:  sans-serif;
+    transition: all 300ms;
+}
+
+img{
+    max-width:100%;
+    border: none;
+}
+
+/*header*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    padding-left: 4em;
+    padding-right: .6em;
+    font-size: 2.5vmin;
+    border-bottom: 1px solid #e9ebed;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+.nav ul li a{
+    font-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+     font-size: 13px;
+    font-weight: 380;
+    color: #272c30;
+    transition: all 300ms;
+}
+
+.nav ul li a:hover{
+    color: rgb(212, 33, 117);
+}
+
+.logo{
+    max-width: 10%;
+    height: 48px;
+    width: 48px;
+    border-radius: 6px;
+}
+
+/*contemido de perfil*/
+
+.main-container{
+    margin-top: 3.5em;
+    max-width: 100%;
+    padding-bottom: .6em;
+    padding-left: 5em;
+    padding-right: .6em;
+
+}
+
+.perfil{
+    display: flex;
+}
+
+.foto-perfil{
+    max-width: 100%;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    margin: 0 1.5em 0 0;
+    -webkit-object-fit: contain;
+    object-fit: contain;
+}
+
+
+#sobre-mi{
+    max-width: 40%;
+}
+
+#sobre-mi h1{
+    font-weight: 700;
+    color: #272c30;;
+}
+
+#sobre-mi p{
+    color: #333536;;
+}
+
+/*redes sociales*/
+
+.redes-container{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    max-width: 100%;
+};
+
+
+.social-media{
+    display: flex;
+    flex-direction:column;
+}
+
+
+.social-media h2{
+    font-size:18px;
+    color:#333536;
+    margin: 0;
+}
+
+.social-media span{
+    color: #5d5e5f;
+    font-weight: 400;
+    margin: 0;
+}
+
+.social-media p{
+    font-size: 1px;
+    color: #5d5e5f;
+    margin: 0;
+}
+
+.social-logo{
+    height: 48px;
+    width: 48px;
+}
+
+
+/*articulos*/
+.articles-container{
+    margin-top:4.1em;
+    max-width: 100%;
+}
+
+.articles{
+    display: flex;
+    justify-content:space-between;
+    margin-top:2.1em;
+    max-width:100%
+}
+
+.articles-header{
+    padding-left: 140px;
+}
+
+.articles-header h2{
+    margin: 0;
+    color:#272c30
+}
+
+.articles-header span{
+    margin-left: 20px;
+    color: #272c30;
+}
+
+.articles article{
+    margin: 20px;
+
+}
+
+
+
+.article-description{
+    display: flex;
+    flex-direction:column;
+    max-width:100%;
+}
+
+.article-description a{
+    font-family: 500;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.article-description p{
+    font-size:2.3vmin;
+}
+
+@media screen and (max-width:800px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav ul li{
+        margin-right:10px;
+    }
+    .perfil{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobre-mi{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        text-align:center;
+    }
+    .redes-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .social{
+        margin: 50px;
+    }
+
+}
+
+@media screen and (max-width:760px){
+    .articles-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .articles{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
